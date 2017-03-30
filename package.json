@@ -1,0 +1,24 @@
+{
+  "name": "tech-news-classifier",
+  "version": "1.0.0",
+  "description": "Classify tech news for auto-tagging articles",
+  "main": "src/main.coffee",
+  "private": true,
+  "scripts": {
+    "prestes": "npm run compile",
+    "prepublish": "npm run compile",
+    "test": "test",
+    "compile": "coffee --compile --output bin/ src/",
+    "main": "coffee src/main.coffee"
+  },
+  "author": "Nabil Alsharif <blit32@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.2.0",
+    "coffee-script": "^1.12.4",
+    "js-yaml": "^3.8.2",
+    "natural": "^0.5.0",
+    "request": "^2.81.0",
+    "unfluff": "^1.1.0"
+  }
+}
