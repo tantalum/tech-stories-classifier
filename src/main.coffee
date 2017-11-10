@@ -21,7 +21,7 @@ classify = (story, classifier, callback) ->
         request url, (err, resp, body) ->
           if err
             console.error err #Log error
-            callback() #And continue ignoring error
+            icallback() #And continue ignoring error
             return
           return icallback() if !resp.headers['content-type']
           return icallback() if !resp.headers['content-type'].includes('text/html')
