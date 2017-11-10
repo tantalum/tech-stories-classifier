@@ -2,14 +2,14 @@
   "name": "tech-news-classifier",
   "version": "1.0.0",
   "description": "Classify tech news for auto-tagging articles",
-  "main": "src/main.coffee",
+  "main": "src/train.coffee",
   "private": true,
   "scripts": {
     "prestes": "npm run compile",
     "prepublish": "npm run compile",
     "test": "test",
     "compile": "coffee --compile --output bin/ src/",
-    "main": "coffee src/main.coffee"
+    "train": "coffee src/train.coffee"
   },
   "author": "Nabil Alsharif <blit32@gmail.com>",
   "license": "MIT",
