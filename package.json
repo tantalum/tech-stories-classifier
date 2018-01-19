@@ -9,7 +9,8 @@
     "prepublish": "npm run compile",
     "test": "test",
     "compile": "coffee --compile --output bin/ src/",
-    "train": "coffee src/train.coffee"
+    "train": "coffee src/train.coffee",
+    "classify":  "coffee src/classify.coffee"
   },
   "author": "Nabil Alsharif <blit32@gmail.com>",
   "license": "MIT",
