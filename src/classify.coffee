@@ -17,7 +17,9 @@ classifyStory = (storyUrl, classifier, callback) ->
             return callback("Content type not found") if !contentType
             return callback("Content type is not text/html") if !contentType.includes('text/html')
             text = unfluff(body).text
-            cls = classifier.classify(text)
+            cls = classifier.getClassifications(text)
+            cls = cls.sort (a, b) ->
+                return b.value - a.value #Sort with highest values first
             callback(null, cls)
             
  
